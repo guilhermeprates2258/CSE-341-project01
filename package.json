@@ -1,0 +1,20 @@
+{
+  "name": "cse-341-project01",
+  "version": "1.0.0",
+  "description": "My first project",
+  "homepage": "https://github.com/guilhermeprates2258/CSE-341-project01#readme",
+  "bugs": {
+    "url": "https://github.com/guilhermeprates2258/CSE-341-project01/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilhermeprates2258/CSE-341-project01.git"
+  },
+  "license": "ISC",
+  "author": "Guilherme",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
