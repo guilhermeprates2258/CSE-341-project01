@@ -1,0 +1,20 @@
+
+#Get All Contacts
+GET https://cse-341-project01-jxmo.onrender.com/contacts
+
+
+#Get Single Contact
+
+GET https://cse-341-project01-jxmo.onrender.com/contacts/69b1621a925ef33c5a22fd3c
+
+
+#Create Contact
+POST https://cse-341-project01-jxmo.onrender.com/contacts
+Content-Type: application/json
+{
+    "firstName": "Luiz",
+    "lastName": "Dalberto",
+    "email": "LDalberto@email.com",
+    "favoriteColor": "Green",
+    "birthday": "1998-04-12"
+}
