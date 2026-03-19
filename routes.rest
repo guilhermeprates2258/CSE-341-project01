@@ -18,3 +18,18 @@ Content-Type: application/json
     "favoriteColor": "Green",
     "birthday": "1998-04-12"
 }
+
+
+PUT https://cse-341-project01-jxmo.onrender.com/contacts/COLE_O_ID_AQUI
+Content-Type: application/json
+
+{
+  "firstName": "Pedro Updated",
+  "lastName": "Silva",
+  "email": "pedro@email.com",
+  "favoriteColor": "Red",
+  "birthday": "2000-01-01"
+}
+
+
+DELETE https://cse-341-project01-jxmo.onrender.com/contacts/COLE_O_ID_AQUI
