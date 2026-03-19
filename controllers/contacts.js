@@ -39,7 +39,7 @@ const createContact = async (req, res) => {
     return res.status(400).json({ message: "All fields are required" });
   }
 
-  const response = await mongodb.getDatabase().db().collection('Contacts').insertOne(contact);
+  const response = await mongodb.getDatabase().collection('Contacts').insertOne(contact);
   console.log(req.body);
   if (response.acknowledged) {
     res.status(201).json({ id: response.insertedId });
@@ -59,7 +59,7 @@ const updateContact = async (req, res) => {
     birthday: req.body.birthday
   };
 
-  const response = await mongodb.getDatabase().db().collection('Contacts').replaceOne(
+  const response = await mongodb.getDatabase().collection('Contacts').replaceOne(
     { _id: contactId },
     contact
   );
@@ -74,7 +74,7 @@ const updateContact = async (req, res) => {
 const deleteContact = async (req, res) => {
   const contactId = new ObjectId(req.params.id);
 
-  const response = await mongodb.getDatabase().db().collection('Contacts').deleteOne({
+  const response = await mongodb.getDatabase().collection('Contacts').deleteOne({
     _id: contactId
   });
 
