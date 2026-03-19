@@ -40,7 +40,7 @@ const createContact = async (req, res) => {
   }
 
   const response = await mongodb.getDatabase().db().collection('Contacts').insertOne(contact);
-
+  console.log(req.body);
   if (response.acknowledged) {
     res.status(201).json({ id: response.insertedId });
   } else {

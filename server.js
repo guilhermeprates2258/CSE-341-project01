@@ -8,6 +8,8 @@ const app = express();
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 
+app.use(express.json());
+
 
 const swaggerOptions = {
   definition: {
